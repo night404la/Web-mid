@@ -1,12 +1,16 @@
 let player;
 let currentPlay = 0;
 
+
+var seth = prompt("請輸入播放器長度", "480");
+var setw = prompt("請輸入播放器寬度", "900");
 //YouTube API Ready
 function onYouTubeIframeAPIReady(){
     player = new YT.Player("player",
     {
-        height:"390",
-        width:"640",
+        
+        height:seth,
+        width:setw,
         videoId:playList[currentPlay],
         playerVars:
         {
